@@ -2529,7 +2529,7 @@
                 },
                 "iframe": {
                   "title": "Webpage",
-                  "description": "Integrate a webpage as a dashboard."
+                  "description": "Integrate a webpage as a dashboard"
                 }
               }
             },
@@ -2616,8 +2616,10 @@
               "assist_devices": "{number} Assist {number, plural,\n  one {device}\n  other {devices}\n}",
               "delete": {
                 "confirm_title": "Delete {name}?",
-                "confirm_text": "{name} will be permanently deleted."
+                "confirm_text": "{name} will be permanently deleted.",
+                "error_preferred": "You cannot delete the preferred assistant"
               },
+              "start_conversation": "Start conversation",
               "devices": {
                 "title": "Assist devices",
                 "device": "Device",
@@ -4219,7 +4221,7 @@
             "name": "Name",
             "name_error_msg": "Name is required",
             "linked_user": "Linked User",
-            "device_tracker_intro": "Select the devices that belong to this person.",
+            "device_tracker_intro": "Select the devices that belong to this person",
             "no_device_tracker_available_intro": "When you have devices that indicate the presence of a person, you will be able to assign them to a person here. You can add your first device by adding a presence-detection integration from the integrations page.",
             "link_presence_detection_integrations": "Presence Detection Integrations",
             "link_integrations_page": "Integrations page",
@@ -4402,8 +4404,9 @@
               }
             },
             "custom_integration": "Custom integration",
-            "depends_on_cloud": "Depends on the cloud",
-            "yaml_only": "Needs manual configuration",
+            "custom_overwrites_core": "Custom integration that replaces a core component",
+            "depends_on_cloud": "Depends on Internet connection",
+            "yaml_only": "This integration cannot be setup from the UI",
             "no_config_flow": "This integration was not set up from the UI",
             "disabled_polling": "Automatic polling for updated data disabled",
             "debug_logging_enabled": "Debug logging enabled",
@@ -4428,8 +4431,8 @@
             "next": "Next",
             "preview": "Preview",
             "found_following_devices": "We found the following devices",
-            "yaml_only_title": "This device cannot be added from the UI",
-            "yaml_only": "You can add this device by adding it to your ''configuration.yaml''. See the documentation for more information.",
+            "yaml_only_title": "This integration cannot be added from the UI",
+            "yaml_only": "You can add this integration by adding it to your ''configuration.yaml''. See the documentation for more information.",
             "open_documentation": "Open documentation",
             "no_config_flow": "This integration does not support configuration via the UI. If you followed this link from the Home Assistant website, make sure you run the latest version of Home Assistant.",
             "not_all_required_fields": "Not all required fields are filled in.",
@@ -5107,7 +5110,7 @@
             "unknown": "Unknown"
           },
           "node_type": {
-            "end_device": "End-device",
+            "end_device": "End device",
             "sleepy_end_device": "Sleepy end device",
             "routing_end_device": "Routing end device",
             "bridge": "Bridge",
